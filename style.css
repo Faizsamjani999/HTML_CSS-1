@@ -1,0 +1,435 @@
+/* root */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* root */
+
+
+/* body */
+body{
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+    background-color: rgb(255,247,243);
+    cursor: default;
+}
+/* body */
+
+
+/* s1 */
+.s1{
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid black; */
+    display: flex;
+    background-color: rgb(57,31,20);
+    padding-inline: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.s1 .sl{
+    width: 42%;
+    height: 80px;
+    /* border: 1px solid black; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.s1 .sl h1{
+    color: white;
+    line-height: 75px;
+    /* letter-spacing: 2px; */
+}
+.s1 .sl p{
+    color: white;
+    line-height: 75px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.s1 .sr{
+    width: 55%;
+    height: 80px;
+    /* border: 1px solid black; */
+    margin: auto;
+    padding-left: 80px;
+}
+
+.sr a{
+    font-size: 15px;
+    text-decoration: none;
+    line-height: 80px;
+    color: white;
+    margin-inline: 17px;
+    text-transform: capitalize;
+    font-weight: 400;
+    position: relative;
+    letter-spacing: 1px;
+}
+.sr a:hover{
+    color: rgb(253,143,95);
+    cursor: pointer;
+}
+.sr a::before{
+    content: "";
+    position: absolute;
+    top: 26px;
+    border-radius: 1px;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(253,143,95);
+    left: 0;
+    transition: 0.2s;
+}
+.sr a:hover::before{
+    width: 100%;
+
+}
+.sr button{
+    width: 140px;
+    height: 45px;
+    margin-left: 17px;
+    background-color: rgb(168,84,50);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    /* border-radius: 3px; */
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+/* s1 */
+
+
+/* s2 */
+    .s2{
+        width: 100%;
+        height: 600px;
+        /* border: 1px solid black; */
+        display: flex;
+        position: relative;
+    }
+    .s2 .sb{
+       position: absolute;
+       margin-top: 100px;
+       margin-left: 40px;
+    }
+    .s2 .sb h1{
+        color: white;
+        font-size: 86px;
+        font-family: 'Lora', serif;
+        line-height: 100px;
+        font-weight: 500;
+        letter-spacing: 3px;
+    }
+    .s2 .sb p{
+        margin-top: 50px;
+        color: white;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 500;
+    }
+    .s2 .sb .sbutton button{
+        margin-top: 20px;
+        width: 165px;
+        height: 50px;
+        background-color: rgb(168,84,50);
+        color: white;
+        border: none;
+        font-size: 15px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: 'Lora', serif;
+        cursor: pointer;
+    }
+    .s2 .sl2{
+        width: 25%;
+        height: 600px;
+        /* border: 1px solid black; */
+        background-color:  rgb(57,31,20);
+    }
+    .s2 .sr2{
+        width: 75%;
+        height: 600px;
+        /* border: 1px solid black; */
+        background: url(h1_hero1.png);
+        background-size: cover;
+    }
+/* s2 */
+
+
+/* s3 */
+.s3{
+    width: 100%;
+    height: 700px;
+    /* border: 1px solid black; */
+    background-color: rgb(245,245,245);
+}
+.sh p{
+    text-align: center;
+    color: rgb(57,31,20);
+    font-family: 'Lora', serif;
+    font-size: 28px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 600;
+    padding-top: 120px;
+    padding-bottom: 50px;
+}
+.sc{
+    display: flex;
+}
+.sc .sb{
+    width: 21%;
+    height: 370px;
+    /* border: 1px solid black; */
+    margin-left: 3.2%;
+}
+.sc .sb .sb1{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    /* border: 1px solid; */
+}
+.sc .sb .sb1 img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.sc .sb .sb1 img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.sc .sb .sb2 .sbb1{
+    display: flex;
+    justify-content: space-between;
+    margin-block: 20px;
+}
+.sc .sb .sb2 .sbb1 p{
+    color: rgb(57,31,20);
+    /* font-family: 'Lora', serif; */
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.sc .sb .sb2 .sbb1 h4{
+    color: rgb(253,143,95);
+    /* font-family: 'Lora', serif; */
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.sc .sb .sb2 .sbb2 p{
+    color: rgba(57, 31, 20, 0.867);
+    font-family: 'Lora', serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 23px; 
+}
+/* s3 */
+
+/* s4 */
+.s4{
+    width: 100%;
+    height: 600px;
+    padding-bottom: 100px;
+    /* border: 10px solid; */
+    /* background-color: rgb(245,245,245); */
+    background: url(video-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+.ss4{
+      width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+.s4:hover{
+    cursor: pointer;
+    transform: scale(1.1); 
+}
+.s4 .img{
+    width: 100%;
+    padding-left: 5%; 
+}
+.s4 .img2{
+   position: relative;
+   top: 50%;
+   left: 39%;
+   cursor: pointer;
+}
+.s4 span{
+   position: relative;
+   top: 48%;
+   left: 40%;
+   font-size: 38px;
+   color: white;
+   font-family: 'Lora', serif;
+}
+/* s4 */
+
+#h1{
+    margin-top: 100px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: rgb(57,31,20);
+    font-size: 40px;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}
+
+/* s5 */
+.s5{
+    width: 100%;
+    height: 500px;
+   
+    /* border: 1px solid; */
+    display: flex;
+}
+.s5 .s55{
+    margin-block: 50px ;
+    width: 30%;
+    height: 450px;
+    /* border: 1px solid; */
+    margin-left: 2.4%;
+}
+.s5 .s55 .simg1{
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+   
+}
+.s5 .s55 .simg1 img{
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+}
+.s5 .s55 .simg1 img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+.s5 .s55 .st h2{
+    color: rgb(57,31,20);
+    font-size: 25px;
+    font-family: 'Lora', serif;
+    margin-block: 15px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+}
+.s5 .s55 .st p{
+    color: rgb(57,31,20);
+    font-size: 13px;
+    line-height: 26px;
+    font-family: 'Lora', serif;
+    font-weight: 100;
+}
+/* s5 */
+
+
+/* s6 */
+.s6{
+    width: 100%;
+    height: 400px;
+    /* border: 2px solid black; */
+    background-color: rgb(255,247,243);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 50px;
+    margin-top: 30px;
+}
+.s6 .rr{
+    width: 100%;
+    height: 340px;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.s6 .rr .r1{
+    width: 27% ;
+    height: 350px;
+    /* border: 2px solid black; */
+    margin-top: 50px;
+}
+.s6 .rr .r1 p{
+    margin-block: 30px;
+    font-size: 14.5px;
+    color: rgb(57,31,20);
+    line-height: 30px;
+    font-family: 'Lora', serif;
+}
+.s6 .rr .r1 .i i{
+    color: rgb(168,84,50);
+    margin-inline: 3px;
+}
+.s6 .rr .r1 .i i:hover{
+    cursor: pointer;
+}
+.s6 .rr .r1 h1{
+    font-size: 25px;
+    font-weight: 500;
+    color: rgba(57, 31, 20, 0.867);
+    font-family: 'Lora', serif;
+    margin-bottom: 30px;
+}
+.s6 .rr .r1 h1:hover{
+    cursor: pointer;
+    color: rgb(57,31,20);
+    text-decoration: underline;
+}
+.s6 .rr .r1 h2:hover{
+    cursor: pointer;
+    color: rgb(57,31,20);
+    text-decoration: underline;
+}
+.s6 .rr .r1 h2{
+    font-size:13px;
+    font-weight: 500;
+    color: rgba(57, 31, 20, 0.867);
+    font-family: 'Lora', serif;
+    margin-block: 10px;
+}
+.s6 .rr .r1 p{
+    font-size:14px;
+    font-weight: 500;
+    color: rgba(57, 31, 20, 0.867);
+    font-family: 'Lora', serif;
+    margin-block: 20px;
+}
+.s6 .rr .r1 h3{
+    font-size:25px;
+    font-weight: 500;
+    color: rgb(253,143,95);
+    font-family: 'Lora', serif;
+    /* margin-block: 15px; */
+    margin-bottom: 10px;
+}
+#ee{
+    width: 21%;
+}
+#ee1{
+    width: 12%;
+}
+#ee2{
+    width: 30%;
+}
+.s6 .rr .r1 h5{
+    font-size:13px;
+    font-weight: 500;
+    color: rgb(253,143,95);
+}
+.cc h1{
+    font-size:13px;
+    font-weight: 500;
+    color: rgb(253,143,95);
+    text-align: center;
+    margin-top: 0px;
+}
+/* s6 */
